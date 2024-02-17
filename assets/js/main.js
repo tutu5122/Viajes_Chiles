@@ -4,16 +4,15 @@ $(function () {
 
     $(document).ready(function() {
         $(window).scroll(function() {
-            var navbar = $('#color');
-            navbar.css('background-color', window.scrollY > 0 ? '#57daf1' : '');
+            $('#color').css('background-color', window.scrollY > 0 ? '#57daf1' : '');
         });
     });
 
-     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    $(document).querySelectorAll('a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
+            $(document).querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });
         });
