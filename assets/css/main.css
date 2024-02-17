@@ -30,6 +30,8 @@ h2 {
 .icolor{
     color: white;
     background-color: aqua;
+    width: 100%;
+    text-align: center;
 }
 
 .form-label {
