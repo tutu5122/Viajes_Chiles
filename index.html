@@ -18,9 +18,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <!-- Inicio del Navbar -->
-            <div class="container">
+      <!-- Inicio del Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark" >            
+            <div id="color" class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/viajes.svg" alt="Logo de viajes por chile" width="50">Viajes Chile
                 </a>
@@ -31,24 +31,26 @@
                 <div class="collapse navbar-collapse fs-5" id="navbarNav">
                     <ul class="navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Quiénes Somos</a>
+                            <a class="nav-link active" href="#quienes-somos">Quiénes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Destacado</a>
+                            <a class="nav-link active" href="#destacado">Destacado</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Contacto</a>
+                            <a class="nav-link active" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav><!-- Cierre del Navbar -->
+        </nav>
+        <!-- Cierre del Navbar -->
 
+        <!-- carousel -->
         <div id="carouselExample" class="carousel slide">            
-            <div class="carousel-inner">
+            <div  id="inicio" class="carousel-inner">
               <div class="carousel-item active">
                 <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Imagen carrusel 1">
               </div>
@@ -68,12 +70,13 @@
                 <span class="visually-hidden">Next</span>
               </button>           
           </div>
+          <!-- carousel -->
         
     </header>
 
     <main class="container">
-        <section>
-            <h2 class="text-center">¿QUIÉNES SOMOS?</h2>
+        <section id="quienes-somos" class="my-5 d-none d-md-none d-xl-block d-xxl-block">
+            <h2 class="text-center py-5">¿QUIÉNES SOMOS? <hr class="line"></h2>
             <div class="row">
                 <article class="col-md-4 col-sm-12">
                   <i class="fas fa-plane fa-2x icolor"></i>
@@ -88,8 +91,9 @@
             </div>            
         </section>
 
-        <section>
-            <h2 class="text-center">DESTACADOS</h2>
+        <section id="destacado" class="my-5">
+          <!-- cards -->
+            <h2 class="text-center py-5">DESTACADOS<hr class="line"></h2>
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
                   <div class="card h-100 icolor">
@@ -128,10 +132,13 @@
                   </div>
                 </div>
               </div>
+              <!-- cards -->
         </section>
 
-        <form class="py-5">
-            <h2 class="text-center">Contacto</h2>
+        <!-- Formulario -->
+        <section id="contacto">
+          <form class="my-5">
+            <h2 class="text-center py-4">Contacto<hr class="line"></h2>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nombre</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -144,9 +151,11 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary boton">Enviar</button>            
+              <button type="submit" class="btn btn-primary boton " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Gracias por contactarnos" 
+              >Enviar</button>  <!-- Se agrego el tooltip -->
         </form>
-
+        </section>       
+        <!-- Formulario -->
 
     </main>
 

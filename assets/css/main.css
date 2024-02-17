@@ -1,45 +1,40 @@
 body{
     font-family: "Inter", sans-serif;
-    background-color: black;
+    background-color: #000000;
 }
 
 .navbar {
-    background-color: transparent !important;
-    position: absolute;
-    width: 100%;
+    background-color: transparent !important;    
     z-index: 2; 
-  
 }
 
 .carousel {
-    position: relative;
     z-index: 1; 
 }
 
 
 h2 {
-    font-weight: 500;
-    color: white;
+    color: #ffffff;
 }
 
 .parrafo1 {
     font-weight: 400;
-    color: white;
+    color: #ffffff;
 }
 
 .icolor{
-    color: white;
-    background-color: aqua;
+    color: #ffffff;
+    background-color: #57daf1;
     width: 100%;
     text-align: center;
 }
 
 .form-label {
-    color: white;
+    color: #ffffff;
 }
 
 .boton{
-    background-color: aqua !important;
+    background-color:#57daf1!important;
 }
 
 .card-img-top{
@@ -50,8 +45,8 @@ h2 {
 
 
 footer {
-    background-color: aqua;
-    color: white;
+    background-color: #57daf1;
+    color: #ffffff;
    
 }
 
@@ -61,5 +56,18 @@ footer div, footer p {
 
 
 footer a {
-    color: white;
+    color: #ffffff;
+}
+
+line {  
+    border-bottom: 10px solid #bababd; 
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg:  #ffffff;
+  --bs-tooltip-color: #000000;
+}
+
+section {
+    scroll-margin-top: 60px;
 }
